@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "f46a69ca-def0-4503-87e0-90b08541aa64",
+		"name": "Post Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Show All Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://blogapi.test/api/post",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://blogapi.test/api/post/1",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "title8",
+									"type": "default"
+								},
+								{
+									"key": "content",
+									"value": "Content8",
+									"type": "default"
+								},
+								{
+									"key": "cover_photo",
+									"value": "https://via.placeholder.com/640x480.png/007766?text=expedita",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://blogapi.test/api/post",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "update title18",
+									"type": "default"
+								},
+								{
+									"key": "content",
+									"value": "update content18",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://blogapi.test/api/post/18",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"post",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://blogapi.test/api/post/19",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"post",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Show All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://blogapi.test/api/user",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://blogapi.test/api/user/5",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "mya mya",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "ayyy@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "pasword",
+									"value": "12345678",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://blogapi.test/api/user",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Contributor",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "contributor@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://blogapi.test/api/user/5",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://blogapi.test/api/user/6",
+							"protocol": "http",
+							"host": [
+								"blogapi",
+								"test"
+							],
+							"path": [
+								"api",
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
