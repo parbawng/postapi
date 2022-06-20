@@ -130,7 +130,7 @@ class UserController extends Controller
         ]);
     }
 
-    public function login(UserAuthRequest $request)
+    public function login(Request $request)
     {
         $user = request(['email','password']);
 
